@@ -6,6 +6,9 @@ I often find that I don't want my promises to settle **too fast**. In the case o
 
 `Promise.settle` settles with an array. I only ever want the value that my original promise fulfill's with or rejects with, just after a minimum timeout.
 
+## Why not `Promise.delay`?
+Various implementations of `Promise.delay` are inconsistent - they delay the resolve, but not the reject, or they only delay a full amount of time after a promise has resolved. `promise-minimum-delay` aims to simply require a promise to wait **at least** the specified delay before it resolves OR rejects. Easy.
+
 ## Usage
 
 ```js
