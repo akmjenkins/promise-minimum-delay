@@ -1,0 +1,22 @@
+{
+  "name": "promise-minimum-delay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Prevent a promise from settling until a minimum delay has passed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akmjenkins/promise-minimum-delay.git"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "author": "Adam Jenkins",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "mocha": "^3.5.0"
+  }
+}
