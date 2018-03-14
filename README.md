@@ -9,10 +9,10 @@ I often find that I don't want my promises to settle **too fast**. In the case o
 ## Usage
 
 ```js
-import to from 'promise-timeout';
+import delayPromise from 'promise-minimum-delay';
 
 let p = Promise.resolve(1); //or something else that returns a promise, like a network request
 
 //make sure at least 1000ms have passed before we perform the callback
-to(p,1000).then((r) => console.log(r));
+delayPromise(p,1000).then((r) => console.log(r));
 ```
