@@ -18,4 +18,7 @@ let p = Promise.resolve(1); //or something else that returns a promise, like a n
 
 //make sure at least 1000ms have passed before we perform the callback
 delayPromise(p,1000).then((r) => console.log(r));
+
+//also works with reject!
+delayPromise(Promise.reject(1),1000).catch((r) => console.log(r));
 ```
